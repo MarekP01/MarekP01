@@ -1,0 +1,166 @@
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Webconect</title>
+
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<!-- greensock -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</head>
+<body>
+
+	<div class="overlay">
+		  <h1><span style="color: red;">WEB</span><span style="color: white;">CONECT</span></h1>
+	</div>
+
+	<div class="wrapper">
+		  <div class="logo"><span style="color: red;">WEB</span>CONECT</div>
+		  <input type="checkbox" id="chk">
+  <label for="chk" class="show-menu-btn">
+	<i class="fas fa-ellipsis-h"></i>
+  </label>
+
+  <ul class="menu">
+	<a href="index.html">Home</a>
+	<a href="about.html">WEBCONECT</a>
+	<a href="#">PHOTOGRAPHY</a>
+	<a href="#">PRICE LIST</a>
+	<a href="#">Contact</a>
+	<label for="chk" class="hide-menu-btn">
+	  <i class="fas fa-times"></i>
+	</label>
+  </ul>
+</div>
+		  <div class="social-media">
+				<ul>
+				  <a href="https://www.facebook.com/Webconectcz/?modal=admin_todo_tour.html"><li><span style="color: red;"><i class="fa fa-facebook" aria-hidden="true"></i></span></li></a>
+					  <li><span style="color: red;"><i class="fa fa-instagram" aria-hidden="true"></i></span></li>
+					  <li><span style="color: red;"><i class="fa fa-twitter" aria-hidden="true"></i></span></li>
+				</ul>
+		  </div>
+		  <div class="side-strip">
+				  <span>ADVENTURE FILL SOULS</span>
+		  </div>
+			<div class="header">
+				  <h1><span style="color: red;">WEB</span>CONECT</h1>
+				  <p>"Jediný způsob, jak dělat dobře svoji práci, je milovat to, co děláš." (Steve Jobs)</p>
+				  <p>A proto Vám nabízeme naše služby, protože milujeme to co děláme, webové stránky a fotografování!</p>
+			</div>
+			<div class="bottom-bar">
+				  <div class="container">
+						<div class="row">
+							  <div class="col-lg-4">
+									<h6>Co nabízíme?</h6>
+									<p><li>Nabízíme webové stránky na zakázku</li></p>
+									<p><li>Profesionální fotografování</li></p>
+							  </div>
+							  <div class="col-lg-4">
+									<h6>Proč si zvolit zrovna Nás?</h6>
+									<p><li>Jsme rychlí</li></p>
+									<p><li>Jsme levní</li></p>
+									<p><li>Jsme spolehliví</li></p>
+							  </div>
+							  <div class="col-lg-4">
+									<h6>Co od Nás očekávat</h6>
+									<p><li>Výbornou spolupráci</li></p>
+									<p><li>Zajem o Vaše nabídku</li></p>
+									<p><li>Zaručený úspěch na trhu</li></p>
+							  </div>
+						</div>
+				  </div>
+			</div>
+	  
+
+			<script type="text/javascript">
+
+				TweenMax.to(".overlay h1", 5, {
+					  opacity: 0,
+					  y: -60,
+					  ease: Expo.easeInOut
+				})
+		  
+				TweenMax.to(".overlay", 2, {
+					  delay: 1,
+					  top: "-100%",
+					  ease: Expo.easeInOut
+				})
+		  
+				TweenMax.from(".logo", 1, {
+					  delay: 2.4,
+					  opacity: 0,
+					  y: 20,
+					  ease: Expo.easeInOut
+				})
+		  
+				TweenMax.staggerFrom(".nav ul li", 1, {
+					  delay: 2.4, opacity: 0, y: 20, ease: Expo.easeInOut
+				}, 0.2)
+		  
+				TweenMax.staggerFrom(".social-media ul li", 1, {
+					  delay: 2.4, opacity: 0, y: 20, ease: Expo.easeInOut
+				}, 0.2)
+		  
+				TweenMax.from(".side-strip", 2, {
+					  delay: 2.4,
+					  opacity: 0,
+					  y: 40,
+					  ease: Expo.easeInOut
+				})
+		  
+				TweenMax.from(".row", 2, {
+					  delay: 2.4,
+					  opacity: 0,
+					  x: 40,
+					  ease: Expo.easeInOut
+				})
+		  
+				TweenMax.from(".row h6", 2, {
+					  delay: 3,
+					  opacity: 0,
+					  y: 40,
+					  ease: Expo.easeInOut
+				})
+		  
+				TweenMax.from(".row p", 2, {
+					  delay: 3.2,
+					  opacity: 0,
+					  y: 20,
+					  ease: Expo.easeInOut
+				})
+		  
+				TweenMax.from(".header h1", 2, {
+					  delay: 3.2,
+					  opacity: 0,
+					  y: 20,
+					  ease: Expo.easeInOut
+				})
+		  
+				TweenMax.from(".header p", 2, {
+					  delay: 3.4,
+					  opacity: 0,
+					  y: 20,
+					  ease: Expo.easeInOut
+				})
+		  
+				TweenMax.from(".header button", 2, {
+					  delay: 3.6,
+					  opacity: 0,
+					  y: 20,
+					  ease: Expo.easeInOut
+				})
+				</script>
+		</body>
+		</html>
